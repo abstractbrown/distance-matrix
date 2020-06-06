@@ -27,12 +27,27 @@
 // if( $pagenow == 'my-plugin.php' ) {
 //     wp_enqueue_style('my-style', 'URL-HERE' );    
 // }
+?>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous">
+</script>
+<?php
 
 function add_plugin_scripts() {
    
     wp_enqueue_style( 'distance_matrix', plugins_url('includes/css/distance_matrix.css', __FILE__ ), array(), '1.1', 'all');
+    wp_enqueue_style( 'distance_matrix', plugins_url('includes/css/dForm.css', __FILE__ ), array(), '1.1', 'all');
+
    
     wp_enqueue_script( 'distance_matrix', plugins_url('includes/js/distance_matrix.js', __FILE__ ), array ( 'jquery' ), 1.1, true);
+    // wp_enqueue_script( 'distance_matrix', plugins_url('includes/js/form.js', __FILE__ ));
+    // wp_enqueue_script( 'distance_matrix', plugins_url('includes/js/make-select.js', __FILE__ ));
+    // wp_enqueue_script( 'distance_matrix', plugins_url('includes/js/model-select.js', __FILE__ ));
+    // wp_enqueue_script( 'distance_matrix', plugins_url('includes/js/vehicle-select.js', __FILE__ ));
+    // wp_enqueue_script( 'distance_matrix', plugins_url('includes/js/year-select.js', __FILE__ ));
+
    
     //   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     //     wp_enqueue_script( 'comment-reply' );
@@ -44,6 +59,5 @@ add_action( 'wp_enqueue_scripts', 'add_plugin_scripts' );
 require_once plugin_dir_path(__FILE__) . 'distance_matrix_form.php';
 require_once plugin_dir_path(__FILE__) . './admin/dm-page.php';
 require_once plugin_dir_path(__FILE__) . './admin/dm_functions.php';
-
 
 ?>

@@ -11,7 +11,6 @@ if (empty($origin) || empty($destination)) {
 } else {
     echo $origin . " to " . $destination;
 }
-
 // add_action("disctance_matrix_form", "distance_matrix_api");
 
 // function distance_matrix_api() {

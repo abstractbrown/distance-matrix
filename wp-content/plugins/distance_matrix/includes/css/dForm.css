@@ -3,7 +3,7 @@
 
 div#distance-form {
     width: 28%;
-    height: 650px;
+    height: 1050px;
     border: 6px;
     border-style: ridge;
     border-color: whitesmoke;
@@ -120,21 +120,21 @@ p#form-title {
   }
 
 input#fname {
-    height: 25px;
+    height: 55px;
     width: 93%;
     font-size: 13px;
     background-color: rgba(245, 245, 245, 0.699);
 }
 
 input#lname {
-    height: 25px;
+    height: 55px;
     width: 93%;
     font-size: 13px;
     background-color: rgba(245, 245, 245, 0.699);
 }
 
 input#distance-matrix-submit {
-    height: 35px;
+    height: 60px;
     width: 175px;
     border: 3px;
     border-style: outset;
