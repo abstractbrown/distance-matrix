@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+div#distance-form {
+    width: 28%;
+    height: 650px;
+    border: 6px;
+    border-style: ridge;
+    border-color: whitesmoke;
+    font-family: Roboto;
+    text-align: center;
+    color: rgba(224, 224, 108, 0.945);
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+p#form-title {
+    text-align: center;
+    color: rgba(77, 236, 38, 0.938);
+    font-size: 29px;
+}
+
+ /* The container must be positioned relative: */
+ .vehicle-select {
+    padding-left: 2%;
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .vehicle-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: rgba(245, 245, 245, 0.699);
+  }
+
+  .select-selected:hover {
+    color: rgba(22, 71, 10, 0.938);
+    border-color: rgba(77, 236, 38, 0.938);
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  .select-selected:after:hover {
+    color: rgba(22, 71, 10, 0.938);
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: rgba(245, 245, 245, 0.986);
+    top: 100%;
+    left: 2.1%;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  } 
+
+  .year-select {
+    padding-left: 2%;
+    position: relative;
+    font-family: Arial;
+  }
+
+  .year-select select {
+    display: none; /*hide original SELECT element: */
+  }
+
+  .make-select {
+    padding-left: 2%;
+    position: relative;
+    font-family: Arial;
+  }
+
+  .make-select select {
+    display: none; /*hide original SELECT element: */
+  }
+
+  .model-select {
+    padding-left: 2%;
+    position: relative;
+    font-family: Arial;
+  }
+
+  .model-select select {
+    display: none; /*hide original SELECT element: */
+  }
+
+input#fname {
+    height: 25px;
+    width: 93%;
+    font-size: 13px;
+    background-color: rgba(245, 245, 245, 0.699);
+}
+
+input#lname {
+    height: 25px;
+    width: 93%;
+    font-size: 13px;
+    background-color: rgba(245, 245, 245, 0.699);
+}
+
+input#distance-matrix-submit {
+    height: 35px;
+    width: 175px;
+    border: 3px;
+    border-style: outset;
+    font-size: 19px;
+    color: white;
+    background-color: rgba(77, 236, 38, 0.938);
+    
+}
+
+input:hover {
+    color: rgba(22, 71, 10, 0.938);
+    border-color: rgba(77, 236, 38, 0.938);
+}
